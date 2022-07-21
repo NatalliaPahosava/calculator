@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    height: 120vh;
+    background-color: darkgrey;
+}
+.container{
+    align-items: center;
+    
+}
