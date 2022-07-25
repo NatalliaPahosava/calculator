@@ -1,16 +1,14 @@
 let a = ''
-
 let numbers = []
 let res
 function numOperations(num) {
   numbers.push(num)
   if (numbers.length) {
-    a = ''
-    document.getElementById('display').innerHTML = a
+  a = ''
+  document.getElementById('display').innerHTML = a
   }
   for (let i = 0; i < numbers.length; i++) {
-    a = a + numbers[i]
-
+  a = a + numbers[i]
   }
   document.getElementById('display').innerHTML = a
 }
@@ -20,8 +18,8 @@ function result() {
   res = eval(a)
 
   document.getElementById('display').innerHTML = res
-  while (numbers.length > 0) {
-    numbers.pop()
+  while (numbers.length > 0){
+  numbers.pop()
   }
 
 }
@@ -31,5 +29,13 @@ function clr() {
     numbers.pop()
   }
   a = ''
+}
 
+function percent(){
+  document.getElementById('display').innerHTML = ''
+  res = eval(a)
+  document.getElementById('display').innerHTML = res*0.01
+  while (numbers.length > 0){
+    numbers.pop()
+  }
 }
